@@ -1,96 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" />
+  
+    <title>PACT | Social Savings & On-Chain Credit</title>
+    <meta name="description" content="A yield-bearing ROSCA protocol on Avalanche that transforms idle capital into active investments for humans and AI agents.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        avax: '#E84142',
+                        dark: '#0b0f19',
+                        darker: '#05070d'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0b0f19; color: #f1f5f9; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .text-gradient { background: linear-gradient(to right, #E84142, #ff8a8a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-overlay { background: linear-gradient(to bottom, rgba(11, 15, 25, 0.3) 0%, rgba(11, 15, 25, 1) 100%); }
+    </style>
+</head>
+<body class="antialiased selection:bg-avax selection:text-white">
+
+    <section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover opacity-40">
+            <source src="0224(1).mp4" type="video/mp4">
+        </video>
+        <div class="absolute z-10 inset-0 hero-overlay"></div>
+        
+        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto mt-16">
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+                The Future of <br> <span class="text-gradient">Social Savings</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                A yield-bearing ROSCA protocol on Avalanche. Transforming idle capital into active investments for humans and AI agents.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#how-it-works" class="bg-avax hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-full transition-all shadow-[0_0_20px_rgba(232,65,66,0.4)]">
+                    Explore Protocol
+                </a>
+                <a href="https://www.loom.com/share/c82c15f07a9f41eeb0d7359bf98b1cb3" target="_blank" class="glass-card hover:bg-white/10 text-white font-semibold py-3 px-8 rounded-full transition-all">
+                    ▶ Watch Pitch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="glass-card p-10 rounded-2xl border-l-4 border-l-gray-600">
+                <h2 class="text-3xl font-bold mb-6 text-gray-200">The Problem</h2>
+                <ul class="space-y-4 text-gray-400">
+                    <li><strong class="text-white">A $1 Trillion Dormant Economy:</strong> Informal savings circles (Tandas, Moai) lose value to inflation and rely on fragile social trust.</li>
+                    <li><strong class="text-white">The Web3 Barrier:</strong> Current DeFi kills capital efficiency through permanent over-collateralization.</li>
+                    <li><strong class="text-white">The AI "Cold Start":</strong> Autonomous AI agents lack verifiable on-chain credit history to access capital.</li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 rounded-2xl border-l-4 border-l-avax">
+                <h2 class="text-3xl font-bold mb-6 text-white">Enter PACT</h2>
+                <ul class="space-y-4 text-gray-400">
+                    <li><strong class="text-white">Social Yield Engine:</strong> Replaces fragile social pressure with trustless smart contracts on Avalanche.</li>
+                    <li><strong class="text-white">Zero Idle Capital:</strong> Pooled funds are automatically routed to DeFi strategies. Win your principal + yield.</li>
+                    <li><strong class="text-white">Building Credit:</strong> Every successful payment builds an on-chain credit score for under-collateralized DeFi.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-20 bg-darker">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">The Core Loop</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Highly composable financial primitive built for scale.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div class="glass-card p-8 rounded-xl">
+                    <div class="text-avax text-4xl mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-2">Pool</h3>
+                    <p class="text-sm text-gray-400">Users join a circle and deposit stable value using Tether (USDT).</p>
+                </div>
+                <div class="glass-card p-8 rounded-xl">
+                    <div class="text-avax text-4xl mb-4">2</div>
+                    <h3 class="text-xl font-bold mb-2">Earn</h3>
+                    <p class="text-sm text-gray-400">Capital is automatically deployed into Benqi to generate continuous yield.</p>
+                </div>
+                <div class="glass-card p-8 rounded-xl">
+                    <div class="text-avax text-4xl mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-2">Distribute</h3>
+                    <p class="text-sm text-gray-400">Chainlink Automation triggers monthly payouts without human intervention.</p>
+                </div>
+                <div class="glass-card p-8 rounded-xl border-b-2 border-b-avax">
+                    <div class="text-avax text-4xl mb-4">4</div>
+                    <h3 class="text-xl font-bold mb-2">Record</h3>
+                    <p class="text-sm text-gray-400">Successful cycles are recorded permanently to build your reputation.</p>
+                </div>
+            </div>
+
+            <div class="mt-20 glass-card p-10 rounded-2xl text-center max-w-4xl mx-auto relative overflow-hidden">
+                <div class="absolute inset-0 bg-avax opacity-5"></div>
+                <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white relative z-10">The ERC-8004 AI Agent Sandbox</h3>
+                <p class="text-gray-400 relative z-10">
+                    PACT is the foundational decentralized credit bureau for non-human actors. Autonomous agents developed on <strong>Kite (gokite.ai)</strong> interact with our protocol via Avalanche's <strong>MCP API</strong> to establish their first on-chain identity and credit score.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center border-t border-gray-800 mt-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-2 text-gray-300">Execution Over Ideas.</h2>
+            <p class="text-gray-500 mb-6">Built for Avalanche Build Games by a team of Web2 veterans and Web3 masterminds.</p>
+            <p class="text-sm text-gray-600">&copy; 2026 PACT Protocol. Let's build the future.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
