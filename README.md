@@ -7,7 +7,7 @@
 **A yield-bearing ROSCA protocol on Avalanche that transforms idle capital into active investments for humans and AI agents.**
 
 ### 🔗 Quick Links
-* **🌐 Live Landing Page:** [pactfi.vercel.app]([VERCEL_LINK])
+* **🌐 Live Landing Page:** [PACT Vercel App]([https://pact-web-six.vercel.app/])
 * **📹 2-Min Pitch Video:** [Watch on Loom](https://www.loom.com/share/c82c15f07a9f41eeb0d7359bf98b1cb3)
 * **⛓️ Smart Contract (Fuji Testnet):** [View on Snowtrace]([SNOWTRACE_LINK])
 
