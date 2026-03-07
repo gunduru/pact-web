@@ -27,23 +27,24 @@ PACT brings traditional social savings circles on-chain. We replace fragile soci
 
 ## 🏗️ Technical Architecture & Integrations
 
-PACT is designed as a highly composable financial primitive.
+PACT is designed as a highly composable financial primitive, leveraging the absolute cutting-edge infrastructure from both the Avalanche and Chainlink ecosystems.
 
-* **Avalanche C-Chain:** Core settlement layer providing sub-second finality and low transaction fees.
-* **Tether (USDT):** The primary stablecoin for deposits and payouts, ensuring protection against volatility.
-* **Benqi Finance (Yield Routing):** Idle capital in the pool is supplied to Benqi to generate interest while users wait for their payout turn.
-* **Chainlink Automation (Keepers):** Trustless execution of monthly payouts without human intervention.
-* **Avalanche MCP API & Kite (gokite.ai):** Serving as a "Credit Sandbox", autonomous AI agents interact with our protocol via MCP API. Leveraging the **ERC-8004** standard, agents make automated micro-contributions to mathematically prove their reliability and build an on-chain identity.
+* **Avalanche C-Chain:** The core settlement layer providing sub-second finality, extremely low transaction fees, and robust security for our ROSCA smart contracts.
+* **Tether (USDT):** The primary stablecoin for deposits and payouts, ensuring protection against volatility for everyday human savers.
+* **Chainlink CRE (Dynamic Yield Routing):** Instead of relying on a static single-protocol yield, PACT utilizes Chainlink CRE (Runtime Environment) workflows. Triggered via Cron jobs, the CRE dynamically fetches live APY rates from various DeFi protocols (e.g., Benqi, Aave), routes the idle capital to the highest-yielding pool, and verifies the entire execution through Chainlink's DON consensus.
+* **x402 Protocol for AI Agents:** To solve the friction of AI agents participating in DeFi, PACT integrates the **x402 protocol**. This allows autonomous AI agents to make seamless, internet-native micro-contributions to our savings pools without managing complex gas/wallet dynamics.
+* **ERC-8004 & Avalanche MCP:** Serving as a "Credit Sandbox" for the Agentic Economy. AI agents (developed on platforms like Kite) interact with our protocol via the Avalanche MCP API. Consistent, verified x402 payments are logged into the ERC-8004 Reputation Registry, allowing non-human actors to build verifiable on-chain credit scores and graduate to under-collateralized lending.
 
 ---
 
 ## 🛠️ Hackathon MVP Scope
 
-For the Avalanche Build Games, our execution focused on delivering the core skeleton of the protocol:
+For the hackathon, our execution focused on delivering the core skeleton of the protocol and proving our architectural thesis:
 
-1. **Vercel Landing Page:** An HTML based frontend showcasing the vision and UI concepts.
-2. **`PactVault.sol`:** The core smart contract deployed on the Avalanche Fuji Testnet. It handles circle creation, deposits, and payouts, with architectural hooks prepared for Benqi and ERC-8004.
-3. **MCP API Agent Simulator:** A Python-based script (`ai_agent_simulator.py` - *coming soon*) demonstrating how an AI agent from Kite interacts with the Avalanche blockchain.
+1. **Next.js/Vercel dApp:** A high-performance frontend demonstrating the vision and UI concepts, complete with ethers.js wallet connectivity.
+2. **`PactVault.sol`:** The core smart contract deployed on the **Avalanche Fuji Testnet**. It handles circle creation, deposits, and payouts, with architectural hooks prepared for dynamic yield routing and ERC-8004.
+3. **Chainlink CRE Simulation:** A TypeScript workflow script (`chainlink-cre-yield-router.ts`) demonstrating how the DON consensus dynamically routes capital to the best DeFi rates.
+4. **MCP & x402 Agent Simulator:** A script (`ai-agent-mcp-simulator.js`) demonstrating how an AI agent interacts with the Avalanche blockchain to build its credit score.
 
 ---
 
