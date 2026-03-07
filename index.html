@@ -123,6 +123,40 @@
             <p class="text-sm text-gray-600">&copy; 2026 PACT Protocol. Let's build the future.</p>
         </div>
     </footer>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.11.1/ethers.umd.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const connectBtn = document.getElementById('connectWalletBtn');
+    
+                connectBtn.addEventListener('click', async () => {
+                    // MetaMask veya Core Wallet var mı kontrol et
+                    if (typeof window.ethereum !== 'undefined') {
+                        try {
+                            connectBtn.innerText = "Connecting...";
+                            
+                            // Cüzdan onayı iste
+                            const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                            const account = accounts[0];
+                            
+                            // Butonu başarı durumuna çevir
+                            connectBtn.innerText = `Connected: ${account.substring(0,6)}...${account.substring(38)}`;
+                            connectBtn.classList.remove('bg-avax', 'hover:bg-red-600');
+                            connectBtn.classList.add('bg-green-600', 'hover:bg-green-700', 'shadow-[0_0_20px_rgba(22,163,74,0.4)]');
+                            
+                            console.log("Wallet successfully connected:", account);
+                            // İleride buraya "Fuji'ye para yatır" fonksiyonunu ekleyeceğiz
+                            
+                        } catch (error) {
+                            console.error("User rejected request:", error);
+                            connectBtn.innerText = "Connection Failed";
+                            setTimeout(() => connectBtn.innerText = "Connect Wallet", 2000);
+                        }
+                    } else {
+                        alert('Please install MetaMask or Core Wallet to use PACT Protocol!');
+                    }
+                });
+            });
+        </script>
 </body>
 </html>
