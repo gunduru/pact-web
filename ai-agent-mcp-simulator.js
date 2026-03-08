@@ -20,7 +20,7 @@ const FUJI_RPC_URL = "https://api.avax-test.network/ext/bc/C/rpc";
 
 // PACT Vault Contract deployed on Fuji
 // TODO: Replace with actual deployed contract address
-const PACT_VAULT_ADDRESS = "YOUR_FUJI_CONTRACT_ADDRESS_HERE"; 
+const PACT_VAULT_ADDRESS = "0xf2E2490720Fa866aF36F2B8Bc303Eaa179f57C8f"; 
 
 // The ROSCA Circle ID the agent is participating in
 const TARGET_CIRCLE_ID = 1; 
