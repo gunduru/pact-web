@@ -10,7 +10,7 @@ const { ethers } = require("ethers");
 
 const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE"; 
 const PRIVATE_KEY = "YOUR_METAMASK_PRIVATE_KEY_HERE"; 
-const CONTRACT_ADDRESS = "YOUR_FUJI_CONTRACT_ADDRESS_HERE"; 
+const CONTRACT_ADDRESS = "0xf2E2490720Fa866aF36F2B8Bc303Eaa179f57C8f";
 
 const RPC_URL = "https://api.avax-test.network/ext/bc/C/rpc";
 
