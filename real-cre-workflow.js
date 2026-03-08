@@ -6,6 +6,7 @@ const { ethers } = require("ethers");
  * ============================================================================
  * * ⚠️ WARNING: DO NOT COMMIT YOUR ACTUAL PRIVATE KEY OR API KEY TO GITHUB!
  * ALWAYS REMOVE OR MASK SENSITIVE DATA BEFORE RUNNING `git push`.
+ * Proof of tx: https://testnet.snowtrace.io/tx/0x00d8dc670425f9c5a87dca2e0aaad5137a0f8ecdc778ca5a56d215bf6de27fbd
  */
 
 const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE"; 
