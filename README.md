@@ -8,8 +8,8 @@
 
 ### 🔗 Quick Links
 * **🌐 Live Landing Page:** [PACT Vercel App](https://pact-web-six.vercel.app/)
-* **📹 2-Min Pitch Video:** [Watch on Loom](https://www.loom.com/share/c82c15f07a9f41eeb0d7359bf98b1cb3)
-* **⛓️ Smart Contract (Fuji Testnet):** [View on Snowtrace]([SNOWTRACE_LINK])
+* **📹 3-Min Pitch Video:** [Watch on Loom](https://www.loom.com/share/c82c15f07a9f41eeb0d7359bf98b1cb3)
+* **⛓️ Smart Contract (Fuji Testnet):** [View on Snowtrace - 0xf2E2490720Fa866aF36F2B8Bc303Eaa179f57C8f](https://testnet.snowtrace.io/address/0xf2E2490720Fa866aF36F2B8Bc303Eaa179f57C8f)
 
 ---
 
